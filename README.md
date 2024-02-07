@@ -9,17 +9,17 @@ Nickname: GLA
 
 USERS:
 ● Admin:
-      Add/Delete Users
-      Add/Delete Company/Publisher
-      Add/Delete Reviews
+      Add/Delete Users,
+      Add/Delete Company/Publisher,
+      Add/Delete Reviews,
       Add/Delete Games
 
 ● User:
-    Look up for games
+    Look up for games,
     Leave Reviews
 
 ● Publisher/Company:
-    Add/Delete Games
+    Add/Delete Games,
     Add/Edit/Change Description of Game
 
 Description:
