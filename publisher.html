@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Publish Your Game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional Styles for Publisher Page */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #game-form {
+            width: 50%;
+            max-width: 600px;
+            background-color: #090909;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+       
+        <ul>
+            <li><a href='home.html'>Home</a></li>            
+            <li><a href='games.html'>Games</a></li>            
+            <li><a href='admin.html'>Admin</a></li>
+            <li><a href='publisher.html'>Publisher</a></li>
+        </ul>
+    </nav>
+    
+    <h1 style="text-align: center;">Publish Your Game</h1>
+
+    <div id="game-form">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="gameImage">Game Image:</label>
+            <input type="file" id="gameImage" name="gameImage" accept="image/*" required>
+
+            <label for="gameName">Game Name:</label>
+            <input type="text" id="gameName" name="gameName" required>
+
+            <label for="gameDescription">Game Description:</label>
+            <textarea id="gameDescription" name="gameDescription" rows="4" required></textarea>
+
+            <label for="gamePlatform">Game Platform:</label>
+            <input type="text" id="gamePlatform" name="gamePlatform" required>
+
+            <button type="submit">Add Game</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
