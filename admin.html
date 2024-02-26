@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,36 +12,67 @@
        
         <ul>
             <li><a href='home.html'>Home</a></li>            
-            <li><a href='games.html'>Games</a></li>            
+            <li><a href='games.html'>Browse Games</a></li>            
             <li><a href='admin.html'>Admin</a></li>
-            <li><a href='publisher.html'>Publish</a></li>
+            <li><a href='publisher.html'>Publish Your Game</a></li>
             <li><a href='user.html'>User</a></li>
-            
            
         </ul>
        
-        <!-- AI Generated Image -->
+        
 
-    </nav>
-    <!-- AI Generated Image -->
+    </nav>  
+    <h1>Admin Page </h1>
+
+    <section>
+        <h2>User Account Management</h2>
+        
+        <form action="/addUser" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Add User</button>
+        </form>
+        
+        <form action="/deleteUser" method="post">
+            <label for="deleteUsername">Username to Delete:</label>
+            <input type="text" id="deleteUsername" name="deleteUsername" required>
+            <button type="submit">Delete User</button>
+        </form>
+    </section>
     
-    <h1>Video Game Library </h1>
+    <!-- Section for deleting games -->
+    <section>
+        <h2>Delete Games</h2>
+        
+        <form action="/deleteGame" method="post">
+            <label for="gameName">Game Name:</label>
+            <input type="text" id="gameName" name="gameName" required>
+            <button type="submit">Delete Game</button>
+        </form>
+    </section>
+    
+    <!-- Section for editing user profiles and changing roles -->
+    <section>
+        <h2>User Profile and Role Management</h2>
+        
+        <form action="/editProfile" method="post">
+            <label for="editUsername">Username to Edit:</label>
+            <input type="text" id="editUsername" name="editUsername" required>
+            
+            <label for="newRole">New Role:</label>
+            <select id="newRole" name="newRole">
+                <option value="normal">Normal User</option>
+                <option value="publisher">Publisher</option>
+                <option value="administrator">Administrator</option>
+            </select>
+            
+            <button type="submit">Edit Profile</button>
+        </form>
+    </section>
+    
     
 
-    <div id="mystory">
-        <div class="text-content">
-            
-            
-
-            
-                
-        </div>
-        <div class="image-content">
-            <!-- AI Generated Images -->
-            <img src="Downloads/goku.png" alt="Italian Trulli">
-            <img src="Downloads/gojoFabuloso.png" alt="Second Image" style="margin-top: 20px;"> <!-- Add your second image here -->
-        </div>
-    </div>
+    
 </body>
 
 </html>
