@@ -149,3 +149,13 @@ button:hover {
     background-color: #45a049;
 }
 
+.image-content {
+	display: flex; /* Use flexbox to align images side by side */
+	justify-content: space-between; /* Distribute images evenly across the container */
+}
+
+.image-content img {
+	width: 200px; /* Set width of each image */
+	height: auto; /* Maintain aspect ratio */
+	margin-top: 20px; /* Add space between images */
+}
