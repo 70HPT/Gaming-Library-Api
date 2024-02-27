@@ -150,12 +150,51 @@ button:hover {
 }
 
 .image-content {
-	display: flex; /* Use flexbox to align images side by side */
-	justify-content: space-between; /* Distribute images evenly across the container */
+	display: flex;
+	justify-content: space-between;
 }
 
 .image-content img {
-	width: 200px; /* Set width of each image */
-	height: auto; /* Maintain aspect ratio */
-	margin-top: 20px; /* Add space between images */
+	width: 200px;
+	height: auto; 
+	margin-top: 20px; 
 }
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row-container {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.row-container img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.row-description {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.link-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #4caf50;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+	.link-button:hover {
+		background-color: #0056b3;
+	}
