@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8"> 
 
-  <title>CodePen - Animated Login Form using Html &amp; CSS Only</title> 
+ 
 
   
 </head>
@@ -17,7 +17,7 @@
        
         <ul>
             <li><a href='home.html'>Home</a></li>            
-            <li><a href='games.html'>Browse Games</a></li>
+            <li><a href='games.html'>Browse Games</a></li>            
             <li><a href='admin.html'>Admin</a></li>
             <li><a href='publisher.html'>Publisher</a></li>
             <li><a href='user.html'>User</a></li>
@@ -25,12 +25,54 @@
            
         </ul>
     </nav>
+     <h3></h3>
+     <h1>Welcome To the Video Game Library</h1>
      
-    <h1>Video Game Library </h1>
+    <section class="login-section" id="user-login">
+        <h2>User Login</h2>
+        <form action="user.html" method="post"> <!-- Replace with the actual URL for user dashboard -->
+            <label for="userUsername">Username:</label>
+            <input type="text" id="userUsername" name="userUsername" required>
+            
+            <label for="userPassword">Password:</label>
+            <input type="password" id="userPassword" name="userPassword" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
     
+    <!-- Publisher Login Section -->
+    <section class="login-section" id="publisher-login">
+        <h2>Publisher Login</h2>
+        <form action="publisher.html" method="post"> <!-- Replace with the actual URL for publisher dashboard -->
+            <label for="publisherUsername">Username:</label>
+            <input type="text" id="publisherUsername" name="publisherUsername" required>
+            
+            <label for="publisherPassword">Password:</label>
+            <input type="password" id="publisherPassword" name="publisherPassword" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    
+    <!-- Administrator Login Section -->
+    <section class="login-section" id="admin-login">
+        <h2>Administrator Login</h2>
+        <form action="admin.html" method="post"> <!-- Replace with the actual URL for admin dashboard -->
+            <label for="adminUsername">Username:</label>
+            <input type="text" id="adminUsername" name="adminUsername" required>
+            
+            <label for="adminPassword">Password:</label>
+            <input type="password" id="adminPassword" name="adminPassword" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
 
-    <div id="mystory">
-        <div class="text-content">
+    <img src="/Users/chrisnieves/Downloads/helldivers.jpeg" alt="Description of the image">
+    
+   
+   
             
             
 
